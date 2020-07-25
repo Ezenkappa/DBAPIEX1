@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DBSchool",
+    "\\DBSchool\\DBSchool",
+    "\\DBSchool\\DBSchool\\App_Data",
+    "\\DBSchool\\DBSchool\\App_Start",
+    "\\DBSchool\\DBSchool\\Controllers",
+    "\\DBSchool\\DBSchool\\DataSource",
+    "\\DBSchool\\DBSchool\\Models"
+  ],
+  "SelectedNode": "\\DBSchool\\DBSchool\\DataSource\\DSSid.cs",
+  "PreviewInSolutionExplorer": false
+}

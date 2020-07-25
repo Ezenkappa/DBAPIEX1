@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "工作-DatabaseSchool",
+      "appliesTo": "DBSchool/DBSchool/App_Data/DatabaseSchool.mdf",
+      "type": "launch"
+    }
+  ]
+}
