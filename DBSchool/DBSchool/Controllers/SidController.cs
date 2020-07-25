@@ -17,7 +17,10 @@ namespace DBSchool.Controllers
             DSSid listsid = new DSSid();
             var Viewsid = listsid.GetSid(sid);
             var Viewcount = listsid.GetSum(sid , 1);
+            //var Viewcount = Viewsid.Count(); 可以省略Run DB次數跟簡略GetSum fonction
             var Viewsum = listsid.GetSum(sid, 2);
+            //var Viewsum = View.Select(x => x.credit).Sum();  可以省略Run DB次數跟簡略GetSum fonction
+            //還有Where 
             ModelAll1 listall = new ModelAll1();
             listall.listSid = new List<ModelSid>();
             listall.listSid = Viewsid;
