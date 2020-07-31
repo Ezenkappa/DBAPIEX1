@@ -15,19 +15,16 @@ namespace DBSchool.Controllers
         [HttpGet]
         public object Getcour(int cid)
         {
-            DSCourid listc = new DSCourid();
-            var Viewcl = listc.GetCour(cid);
+            DSCourid listcl = new DSCourid();
+            var Viewc = listcl.GetCour(cid);
             //var Viewcount = Viewsid.Count(); 可以省略Run DB次數跟簡略GetSum fonction
             //var Viewsum = View.Select(x => x.credit).Sum();  可以省略Run DB次數跟簡略GetSum fonction
             //還有Where 
             DSSlist lists = new DSSlist();
             var Viewsl = lists.GetSlist(cid);
-            ModelAll2 listall = new ModelAll2();
-            listall.listc = new List<ModelCourid>();
-            listall.listc = Viewcl;
-            listall.lists = new List<StudentList>();
-            listall.lists = Viewsl;
-            return listall;
+            Viewc.lists = new List<StudentList>();
+            Viewc.lists = Viewsl;
+            return Viewc;
         }
     }
 }

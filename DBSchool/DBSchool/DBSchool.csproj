@@ -160,10 +160,13 @@
     <Compile Include="Controllers\couridController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SidController.cs" />
+    <Compile Include="Controllers\TidController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DataSource\DSCourid.cs" />
     <Compile Include="DataSource\DSSid.cs" />
     <Compile Include="DataSource\DSSlist.cs" />
+    <Compile Include="DataSource\DSTid.cs" />
+    <Compile Include="DataSource\DSTSlist.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -171,7 +174,9 @@
     <Compile Include="Models\ModelCourid.cs" />
     <Compile Include="Models\ModelSid.cs" />
     <Compile Include="Models\ModelAll1.cs" />
+    <Compile Include="Models\ModelTid.cs" />
     <Compile Include="Models\StudentList.cs" />
+    <Compile Include="Models\TStudentList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,9 +7,7 @@ namespace DBSchool.Models
 {
     public class ModelAll2
     {
-        public List<ModelCourid> listc { get; set; }
-        public List<StudentList> lists { get; set; }
-        public String listcl { get; set; }
-        public String listsl { get; set; }
+        public List<ModelTid> listt { get; set; }
+        public List<TStudentList> lists { get; set; }
     }
 }

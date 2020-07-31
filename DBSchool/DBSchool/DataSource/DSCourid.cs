@@ -10,10 +10,10 @@ namespace DBSchool.DataSource
 {
     public class DSCourid
     {
-        public List<ModelCourid> GetCour(int cid)
+        public ModelCourid GetCour(int cid)
         {
             string SqlString = "";
-            List<ModelCourid> clist = new List<ModelCourid>();
+            ModelCourid clist = new ModelCourid();
             using (SqlConnection Sql_Conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["The_Sid"].ConnectionString))
             {
                 SqlString = "SELECT tea.t_name , dept.dept_name , cou.Credit FROM dbo.Course cou " +
@@ -29,12 +29,9 @@ namespace DBSchool.DataSource
                     {
                         while (Sql_Reader.Read())
                         {
-                            ModelCourid stData = new ModelCourid();
-                            stData.t_name = Sql_Reader["t_name"].ToString().Trim();
-                            stData.dept_name = Sql_Reader["dept_name"].ToString().Trim();
-                            stData.Credit = Convert.ToInt32(Sql_Reader["Credit"].ToString());
-
-                            clist.Add(stData);
+                         clist.t_name = Sql_Reader["t_name"].ToString().Trim();
+                         clist.dept_name = Sql_Reader["dept_name"].ToString().Trim();
+                         clist.Credit = Convert.ToInt32(Sql_Reader["Credit"].ToString());
                         }
 
                         Sql_Reader.Close();
@@ -42,7 +39,7 @@ namespace DBSchool.DataSource
                     Sql_Conn.Close();
                 }
             }
-            return clist;
+           return clist; 
         }
-        }
+    }
 }
