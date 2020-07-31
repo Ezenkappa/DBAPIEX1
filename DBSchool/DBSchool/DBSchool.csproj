@@ -157,15 +157,20 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\couridController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SidController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataSource\DSCourid.cs" />
     <Compile Include="DataSource\DSSid.cs" />
+    <Compile Include="DataSource\DSSlist.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ModelCourid.cs" />
     <Compile Include="Models\ModelSid.cs" />
     <Compile Include="Models\ModelAll1.cs" />
+    <Compile Include="Models\StudentList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

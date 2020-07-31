@@ -9,6 +9,6 @@
     "\\DBSchool\\DBSchool\\DataSource",
     "\\DBSchool\\DBSchool\\Models"
   ],
-  "SelectedNode": "\\DBSchool\\DBSchool\\Controllers\\SidController.cs",
+  "SelectedNode": "\\DBSchool\\DBSchool\\DataSource\\DSSid.cs",
   "PreviewInSolutionExplorer": false
 }
