@@ -33,7 +33,7 @@ namespace DBSchool.DataSource
                             ModelSid stData = new ModelSid();
                             stData.cour_id = Convert.ToInt32(Sql_Reader["cour_id"].ToString());
                             stData.cour_name = Sql_Reader["cour_name"].ToString().Trim();
-                            stData.credit = Convert.ToInt32(Sql_Reader["credit"].ToString());
+                            stData.credit = Convert.ToInt32(Sql_Reader["Credit"].ToString());
                             stData.t_name = Sql_Reader["t_name"].ToString().Trim();
                             list.Add(stData);
                          }
